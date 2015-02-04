@@ -1,0 +1,21 @@
+package com.inc.sombra.manager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.inc.sombra.dao.ISubTaskDao;
+import com.inc.sombra.entity.Subtask;
+
+@Service
+public class SubtaskManager implements ISubtaskManager{
+
+	@Autowired
+	ISubTaskDao subtaskDao;
+	
+	@Override
+	public void save(Subtask subtask) {
+		// TODO Auto-generated method stub
+		subtaskDao.save(subtask);
+	}
+	
+}

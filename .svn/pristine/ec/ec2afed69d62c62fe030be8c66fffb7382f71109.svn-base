@@ -1,0 +1,13 @@
+package com.inc.sombra.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.inc.sombra.entity.Subtask;
+import com.inc.sombra.entity.Task;
+
+@Repository
+public interface ISubTaskDao extends JpaRepository<Subtask,Integer> {
+}

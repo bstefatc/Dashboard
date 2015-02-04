@@ -1,0 +1,14 @@
+package com.inc.sombra.manager;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.inc.sombra.entity.Task;
+
+@Component
+public interface ITaskManager {
+	public void save(Task task);
+
+	public List<Task> findTaskById(Integer pictureId);
+}
